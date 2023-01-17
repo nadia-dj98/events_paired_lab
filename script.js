@@ -14,7 +14,7 @@ const addToDoItem = (event) => {
     event.preventDefault();
     const toDoItem = document.createElement("li");
     const deleteButton = document.createElement("button")
-    // deleteButtton.innerText = "hELLO BUTTON";
+    deleteButton.textContent = "X";
     toDoItem.textContent = event.target.newItem.value;
     const toDoList= document.querySelector("#list");
     toDoList.appendChild(toDoItem);
@@ -27,5 +27,5 @@ toDoListForm.addEventListener('submit', addToDoItem);
 
 const deleteToDoItem = () => {
     const itemToRemove = document.querySelector(toDoItem);
-
+        
 }
