@@ -10,7 +10,7 @@ const addToDoItem = (event) => {
     // const inputValue = document.getElementById("#newtodo").value;
     // const toDoList = document.querySelector("#list");
     // toDoList.appendChild(toDoItem);
-
+    console.log(event.target);
     event.preventDefault();
     const toDoItem = document.createElement("li");
     toDoItem.textContent = event.target.newItem.value;
